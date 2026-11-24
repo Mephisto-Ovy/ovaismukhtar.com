@@ -79,3 +79,16 @@ nav.top .rec{gap:12px}
 /* Mobile nav: name on one line, clock hidden to make room for the toggle */
 nav.top .name{white-space:nowrap}
 @media (max-width:760px){nav.top .rec>span{display:none}nav.top .rec{gap:6px}}
+
+/* Touch: no browser tap flash; quiet press states that match the design instead */
+html,*{-webkit-tap-highlight-color:transparent}
+.on-touch{display:none}
+@media (hover:none){
+  .on-hover{display:none}.on-touch{display:inline}
+  a,button,.role,.fr,.chap,.cbar a{transition:scale .16s ease,opacity .16s ease,background-color .16s ease}
+  a:active,button:active{scale:.97}
+  #mnav li a:active,nav.top ul a:active{scale:1;opacity:.6}
+  .fr:active,.strip a:active,.strip button:active{scale:1;opacity:.8}
+  .role:active,.chap:active{background-color:rgba(224,86,59,.07)}
+  html[data-theme=light] .role:active,html[data-theme=light] .chap:active{background-color:rgba(184,61,37,.07)}
+}
