@@ -55,7 +55,8 @@ body.has-cursor, body.has-cursor a, body.has-cursor button{cursor:none}
 #loader .num{font-family:var(--serif);font-size:clamp(64px,10vw,140px);line-height:1;font-style:italic}
 #loader .bar{width:180px;height:1px;background:#2a2a28;position:relative;overflow:hidden}
 #loader .bar i{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}
-#loader.done{transform:translateY(-100%)}
+#loader{overflow:hidden}
+#loader.done{transform:translateY(-100%);pointer-events:none;visibility:hidden;transition:transform 1.1s cubic-bezier(.77,0,.18,1),visibility 0s linear 1.1s}
 
 /* nav — always solid */
 nav.top{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px var(--pad);background:rgba(11,11,10,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .4s,padding .4s}
