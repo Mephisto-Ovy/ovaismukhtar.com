@@ -1,0 +1,81 @@
+/* Light theme, "contact print". Dark is the default; light is chosen with the toggle and remembered. */
+html[data-theme=light]{
+  --bg:#F3EFE7; --ink:#171512; --mute:#6E675C; --line:#D9D3C8; --red:#B83D25; --deep:#EAE5DB; --deep2:#E1DBCF;
+  color-scheme:light;
+}
+html[data-theme=light] body{background:var(--bg);color:var(--ink)}
+
+/* Dark islands: photos, demo screens and the photo viewer stay on black in both themes */
+html[data-theme=light] :is(.plate,.win,#lb,.sheet,.strip,#hero .cap){
+  --bg:#0B0B0A; --ink:#ECE7DD; --mute:#8F887C; --line:#2A2825; --red:#E0563B; --deep:#151412; --deep2:#1C1B18;
+}
+html[data-theme=light] :is(.plate,.win,#lb,.sheet,.strip,.quote){color:var(--ink)}
+html[data-theme=light] .win{box-shadow:0 30px 80px rgba(23,21,18,.22)}
+
+/* Chrome */
+html[data-theme=light] nav.top,
+html[data-theme=light] .cbar{background:rgba(243,239,231,.94)}
+html[data-theme=light] .proto{color:#8a8378;background:rgba(243,239,231,.88);border-color:#d9d3c8}
+html[data-theme=light] .grain{opacity:.045;mix-blend-mode:multiply}
+html[data-theme=light] .mag{border-color:#cdc5b8}
+html[data-theme=light] #pt .sh{background:#EAE5DB}
+html[data-theme=light] #pt .ln{background:#B83D25;box-shadow:0 0 14px rgba(184,61,37,.45)}
+html[data-theme=light] #pt .lb{color:#B83D25}
+
+/* Mobile menu */
+html[data-theme=light] .mbtn{border-color:#D9D3C8;color:#171512}
+html[data-theme=light] .menu-open .mbtn{border-color:#B83D25}
+html[data-theme=light] #mnav{background:#F3EFE7}
+html[data-theme=light] #mnav::before{background:radial-gradient(circle,rgba(184,61,37,.10),rgba(184,61,37,0) 60%)}
+html[data-theme=light] #mnav li{border-color:#D9D3C8}
+html[data-theme=light] #mnav li a,html[data-theme=light] #mnav .ft a{color:#171512}
+html[data-theme=light] #mnav li a .n,html[data-theme=light] #mnav .ft span{color:#6E675C}
+html[data-theme=light] #mnav li a.cur .t,html[data-theme=light] #mnav li a.cur .n{color:#B83D25}
+html[data-theme=light] #mnav .ft a{border-color:#B83D25}
+
+/* Home */
+html[data-theme=light] #loader{background:#F3EFE7}
+html[data-theme=light] #loader::before{background:radial-gradient(circle,rgba(184,61,37,.16),rgba(184,61,37,0) 60%)}
+html[data-theme=light] #loader .bar{background:#D9D3C8}
+html[data-theme=light] #statement .pin::before{background:radial-gradient(circle,rgba(184,61,37,.13),rgba(184,61,37,.04) 38%,rgba(184,61,37,0) 64%)}
+html[data-theme=light] #statement .w.hot{color:#B83D25;text-shadow:0 0 22px rgba(184,61,37,.28)}
+html[data-theme=light] #statement .w{opacity:.16}
+html[data-theme=light] #statement .w.on,html[data-theme=light] #statement .w.hot{opacity:1}
+html[data-theme=light] .panel .no{-webkit-text-stroke-color:#B4AB9D}
+html[data-theme=light] .rg i{background:#C4BCAF}
+html[data-theme=light] .rg.lit i{background:var(--red)}
+html[data-theme=light] .role .sub span{color:#8a8378}
+html[data-theme=light] #contact::before{background:radial-gradient(circle,rgba(184,61,37,.09),rgba(184,61,37,0) 60%)}
+
+/* Photography */
+html[data-theme=light] .ch .no{-webkit-text-stroke-color:#B4AB9D}
+
+/* Case studies */
+html[data-theme=light] .cs .bgno{-webkit-text-stroke-color:#DDD5C8}
+html[data-theme=light] .ready .cs .bgno{-webkit-text-stroke-color:#E3B8AC}
+html[data-theme=light] .cs .lede,html[data-theme=light] .blk .txt{color:#3A352E}
+html[data-theme=light] .live figcaption{color:#8a8378}
+html[data-theme=light] .steps li::before{border-color:#B4AB9D}
+html[data-theme=light] .node{background:#EAE5DB}
+html[data-theme=light] .node.lit{box-shadow:0 0 30px rgba(184,61,37,.14)}
+html[data-theme=light] .steps::after{box-shadow:0 0 10px rgba(184,61,37,.35)}
+html[data-theme=light] .steps li.lit::before{box-shadow:0 0 12px rgba(184,61,37,.35)}
+
+/* Theme toggle */
+.thm{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 12px 0 10px;border:1px solid var(--line);border-radius:999px;background:none;color:var(--mute);font:500 11px var(--mono,'IBM Plex Mono',monospace);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:color .3s,border-color .3s}
+.thm:hover{color:var(--ink);border-color:var(--red)}
+.thm svg{width:14px;height:14px;flex:none}
+.thm .sun{display:none}
+html[data-theme=light] .thm .sun{display:block}
+html[data-theme=light] .thm .moon{display:none}
+nav.top .rec{gap:12px}
+@media (max-width:760px){.thm{width:44px;height:44px;padding:0;justify-content:center}.thm .lbl{display:none}.thm svg{width:16px;height:16px}}
+
+/* Switch wipe: paper (or darkroom) sweeps down behind a red line */
+#tw{position:fixed;inset:0;z-index:140;pointer-events:none;clip-path:inset(0 0 100% 0)}
+#tw .ln{position:absolute;left:0;right:0;height:2px;top:0;background:#E0563B;box-shadow:0 0 16px rgba(224,86,59,.8)}
+@media (prefers-reduced-motion:reduce){#tw{display:none}}
+
+/* Mobile nav: name on one line, clock hidden to make room for the toggle */
+nav.top .name{white-space:nowrap}
+@media (max-width:760px){nav.top .rec>span{display:none}nav.top .rec{gap:6px}}

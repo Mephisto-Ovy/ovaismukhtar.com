@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- seo -->
+<title>Photography · Ovais Mukhtar</title>
+<meta name="description" content="Twenty-six frames in four chapters: geometry, light, stillness and wanderings. Mostly black and white, from the old quarters of Dubai to the Alps.">
+<link rel="canonical" href="https://ovaismukhtar.com/photography.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ovais Mukhtar">
+<meta property="og:title" content="Photography · Ovais Mukhtar">
+<meta property="og:description" content="Twenty-six frames in four chapters: geometry, light, stillness and wanderings. Mostly black and white, from the old quarters of Dubai to the Alps.">
+<meta property="og:url" content="https://ovaismukhtar.com/photography.html">
+<meta property="og:image" content="https://ovaismukhtar.com/img/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ovais Mukhtar: I build digital things that work, and frame the world around them.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Photography · Ovais Mukhtar">
+<meta name="twitter:description" content="Twenty-six frames in four chapters: geometry, light, stillness and wanderings. Mostly black and white, from the old quarters of Dubai to the Alps.">
+<meta name="twitter:image" content="https://ovaismukhtar.com/img/og-card.jpg">
+<!-- /seo -->
+<meta name="theme-color" content="#0B0B0A">
+<script>try{if(localStorage.getItem('ovy-theme')==='light'){document.documentElement.setAttribute('data-theme','light');document.querySelector('meta[name="theme-color"]').setAttribute('content','#F3EFE7')}}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+/* header */
+.ph{padding:clamp(130px,20vh,200px) var(--pad) 8vh;position:relative}
+.ph .k{color:var(--red);display:block;margin-bottom:28px}
+.ph h1{margin:0;font-size:clamp(64px,13vw,240px);line-height:.92}
+.ph h1 .rv:nth-child(2){padding-left:8vw}
+.ph h1 em{color:var(--red);font-style:italic}
+.ph .lede{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end;margin-top:6vh}
+.ph .lede p{margin:0;max-width:560px;font-size:clamp(17px,1.4vw,20px);color:var(--mute);opacity:0;transform:translateY(16px);transition:all 1s cubic-bezier(.19,1,.22,1) .5s}
+.ph .lede p b{color:var(--ink);font-weight:500}
+.ph .stats{display:flex;gap:36px;opacity:0;transition:opacity 1s .8s}
+.ph .stats div{display:flex;flex-direction:column;gap:6px}
+.ph .stats b{font-family:var(--serif);font-weight:500;font-size:clamp(40px,4vw,64px);line-height:1;font-variation-settings:'opsz' 144,'SOFT' 50}
+.ph .stats span{color:var(--mute)}
+.ready .ph .lede p{opacity:1;transform:none}.ready .ph .stats{opacity:1}
+@media (max-width:760px){.ph .lede{grid-template-columns:1fr}}
+
+/* sticky chapter bar */
+.cbar{position:sticky;top:64px;z-index:40;background:rgba(11,11,10,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cbar .in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.cbar a{position:relative;display:flex;align-items:baseline;gap:12px;padding:16px var(--pad) 16px 22px;border-right:1px solid var(--line);color:var(--mute);transition:color .3s,background .3s}
+.cbar a:first-child{padding-left:var(--pad)}
+.cbar a:last-child{border-right:0}
+.cbar a .n{font-family:var(--mono);font-size:11px;letter-spacing:.12em}
+.cbar a .t{font-family:var(--serif);font-size:22px;font-variation-settings:'opsz' 72,'SOFT' 50;color:inherit}
+.cbar a .c{margin-left:auto;font-family:var(--mono);font-size:11px}
+.cbar a i{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--red);transform:scaleX(var(--p,0));transform-origin:left;box-shadow:0 0 10px rgba(224,86,59,.7)}
+.cbar a.act{color:var(--ink);background:var(--deep)}
+.cbar a.act .n{color:var(--red)}
+@media (max-width:760px){
+  .cbar{top:58px}
+  .cbar .in{display:flex;overflow-x:auto;scrollbar-width:none}.cbar .in::-webkit-scrollbar{display:none}
+  .cbar a{flex:0 0 auto;padding:13px 18px}.cbar a:first-child{padding-left:var(--pad)}
+  .cbar a .c{display:none}.cbar a .t{font-size:18px}
+}
+
+/* chapters */
+.ch{padding:16vh var(--pad) 0}
+.ch .hd{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px 36px;align-items:end;margin-bottom:5vh}
+.ch .no{font-family:var(--serif);font-style:italic;font-size:clamp(80px,10vw,170px);line-height:.8;color:transparent;-webkit-text-stroke:1px #5a554d;font-variation-settings:'opsz' 144,'SOFT' 100;transition:-webkit-text-stroke-color .8s}
+.ch.on .no{-webkit-text-stroke-color:var(--red)}
+.ch h2{margin:0;font-size:clamp(48px,6.5vw,110px);line-height:.95}
+.ch .ds{grid-column:2;margin:0;color:var(--mute);max-width:520px}
+.ch .ct{grid-row:1/3;grid-column:3;align-self:end;color:var(--mute);text-align:right}
+@media (max-width:760px){.ch .hd{grid-template-columns:auto 1fr}.ch .ds{grid-column:1/-1}.ch .ct{grid-row:auto;grid-column:1/-1;text-align:left}}
+
+/* film strips: justified rows, no gaps */
+.strip{display:flex;gap:10px;padding:26px 10px;margin-bottom:10px;background-color:#050505;
+  background-image:repeating-linear-gradient(90deg,transparent 0 10px,#1b1a18 10px 22px),repeating-linear-gradient(90deg,transparent 0 10px,#1b1a18 10px 22px);
+  background-size:100% 10px,100% 10px;background-position:top 6px left 0,bottom 6px left 0;background-repeat:no-repeat}
+.fr{position:relative;flex:var(--a) 1 0;aspect-ratio:var(--a);min-width:0;border:0;padding:0;background:#000;color:inherit;font:inherit;text-align:left;overflow:visible}
+.fr .im{position:absolute;inset:0;overflow:hidden}
+.fr img{width:100%;height:100%;object-fit:cover}
+.fr:hover img{transform:scale(1.035)}
+.fr .num{position:absolute;left:2px;top:-21px;font-family:var(--mono);font-size:9px;color:#d07a3a;letter-spacing:.1em}
+.fr .cap{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,0));display:flex;justify-content:space-between;align-items:baseline;gap:10px;opacity:0;transform:translateY(8px);transition:all .45s cubic-bezier(.19,1,.22,1)}
+.fr:hover .cap,.fr:focus-visible .cap{opacity:1;transform:none}
+.fr .cap .t{font-family:var(--serif);font-style:italic;font-size:20px;font-variation-settings:'opsz' 72,'SOFT' 100}
+.fr .cap .p{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#cfc8bb}
+.quote{flex:var(--a) 1 0;aspect-ratio:var(--a);min-width:0;display:flex;flex-direction:column;justify-content:center;padding:0 4%;border:1px solid var(--line);background:var(--deep)}
+.quote p{margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.4vw,38px);line-height:1.2;font-variation-settings:'opsz' 72,'SOFT' 100}
+.quote p em{color:var(--red)}
+.quote span{margin-top:14px;color:var(--mute)}
+@media (max-width:760px){
+  .strip{flex-direction:column;padding:22px 8px;gap:30px}
+  .fr,.quote{flex:none;width:100%}
+  .fr .cap{opacity:1;transform:none}
+  .quote{padding:28px 20px}
+}
+.end{padding:18vh 0 0}
+</style>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div id="cur" aria-hidden="true"><div class="dot"></div><div class="vf"><i></i><i></i><i></i><i></i><span>VIEW</span></div></div>
+
+<nav class="top" id="nav" aria-label="Main">
+<a href="index.html" class="name">Ovais Mukhtar</a>
+<ul class="mono"><li><a href="index.html#work">Work</a></li><li><a href="index.html#exp">Experience</a></li><li><a href="photography.html" class="act">Photography</a></li><li><a href="#contact">Contact</a></li></ul>
+<div class="rec mono"><b></b><span data-clock="Dubai {t}">Dubai --:--</span></div>
+</nav>
+
+<main>
+<header class="ph">
+<span class="k mono">( Photography )</span>
+<h1 aria-label="Contact sheet"><span class="rv"><span>Contact</span></span><span class="rv"><span><em>sheet.</em></span></span></h1>
+<div class="lede">
+<p>Twenty-six frames in four chapters. Mostly <b>black and white</b>, mostly <b>looking up</b>, from the old quarters of <b>Dubai</b> to the <b>Alps</b>. Click any frame to enlarge it.</p>
+<div class="stats mono"><div><b data-c="26">0</b><span>Frames</span></div><div><b data-c="4">0</b><span>Chapters</span></div></div>
+</div>
+</header>
+
+<nav class="cbar" aria-label="Chapters"><div class="in" id="cbar"></div></nav>
+
+<div id="chapters"></div>
+
+<div class="end">
+<a class="next" href="index.html#work"><span class="k mono">Back to</span><span class="n">Selected work →</span></a>
+</div>
+
+<section class="closing" id="contact">
+<h2>Let's <em>talk.</em></h2>
+<div class="cta">
+<a class="mag" href="mailto:ovais.mukhtar@gmail.com">ovais.mukhtar@gmail.com <span aria-hidden="true">↗</span></a>
+<a class="mag" href="https://ae.linkedin.com/in/ovais">LinkedIn <span aria-hidden="true">↗</span></a>
+</div>
+<footer class="mono"><span>© 2026 Ovais Mukhtar · All photographs by me</span><span data-clock="Dubai · {t}">Dubai</span><span>Shot, designed &amp; built, with AI</span></footer>
+</section>
+</main>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+<div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<span class="cnt mono" id="lbn">Frame 01</span>
+<button class="x" id="lbx">Close ✕</button>
+<div class="inner"><div class="frame"><img id="lbimg" alt=""></div>
+<div class="bar"><button id="lbp">← Prev</button><div class="cap"><span class="t" id="lbt"></span><span class="m mono" id="lbc"></span></div><button id="lbnx">Next →</button></div></div>
+</div>
+
+
+
+<script src="site.js"></script>
+<script>
+(function(){
+var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var clamp=function(v,a,b){return Math.max(a,Math.min(b,v))}, ease=function(t){return 1-Math.pow(1-t,3)};
+var reduce=Site.reduce;
+
+/* chapters: rows are justified — widths follow each photo's shape, so every row is full */
+var C=[
+ {id:'geometry',n:'01',name:'Geometry',ds:'Lines, grids and shadow. Mostly black and white, mostly looking up.',rows:[
+   [['hexagon','Honeycomb','Dubai',.75],['rooftop','Corner','Old Dubai',.6664],['atrium','Atrium','Dubai',1],['burj','Old & new','Deira, Dubai',.75]],
+   [['pigeons','Roofline','Old Dubai',.75],['bench','Bench & shadow','Old Dubai',1.5],['jali','Jali','Old Dubai',1.5]]]},
+ {id:'light',n:'02',name:'Light',ds:'Golden hour, dusk and night, warm light on stone.',rows:[
+   [['alley','Looking up','Old Dubai',.6664],['zayed','Late sun','Sheikh Zayed Grand Mosque',1.333],['door','The carved door','Old Dubai',.6664]],
+   [['louvreceiling','Rain of light','Louvre Abu Dhabi',1.777],['bluemosque','Night minaret','Istanbul',.75],['carousel','Swing','Islamabad',1.494]]]},
+ {id:'stillness',n:'03',name:'Stillness',ds:'Quiet things, up close: texture, water, objects left behind.',rows:[
+   [['nailed','Nailed shut','Pakistan',1.663],['tv','Reception','Pakistan',.601],['flowers','Dark flowers','Pakistan',1.494]],
+   [['spout','Ablution','Sharjah Grand Mosque',.75],['quran','Recitation','Sharjah Grand Mosque',.75],['QUOTE',null,null,1.5]]]},
+ {id:'wanderings',n:'04',name:'Wanderings',ds:'People and places along the way.',rows:[
+   [['louvreman','Under the dome','Louvre Abu Dhabi',1.777],['oldman','Homeward','Pakistan',.75],['kaaba','Tawaf','Makkah',1.333]],
+   [['friends','The walk back','Pakistan',1.494],['tree','Alone again','Pakistan',1.493],['dog','The stray','Pakistan',1.493]],
+   [['alps','Above the clouds','Swiss Alps',1.777],['coupe','Rock & steel','Ras Al Khaimah',1.777]]]}
+];
+var all=[], wrap=$('#chapters'), bar=$('#cbar');
+C.forEach(function(ch){
+  var count=0; ch.rows.forEach(function(r){ r.forEach(function(p){ if(p[0]!=='QUOTE') count++; }); });
+  var a=document.createElement('a'); a.href='#'+ch.id; a.setAttribute('data-ch',ch.id);
+  a.innerHTML='<span class="n">'+ch.n+'</span><span class="t">'+ch.name+'</span><span class="c">'+count+' frames</span><i></i>'; bar.appendChild(a);
+  var sec=document.createElement('section'); sec.className='ch'; sec.id=ch.id; sec.setAttribute('aria-labelledby',ch.id+'-h');
+  var html='<div class="hd"><span class="no" aria-hidden="true">'+ch.n+'</span><h2 id="'+ch.id+'-h"><span class="rv"><span>'+ch.name+'</span></span></h2><span class="ct mono">'+count+' frames</span><p class="ds">'+ch.ds+'</p></div>';
+  ch.rows.forEach(function(r){
+    html+='<div class="strip">';
+    r.forEach(function(p){
+      if(p[0]==='QUOTE'){ html+='<div class="quote" style="--a:'+p[3]+'"><p>"You don&rsquo;t take a photograph, you <em>make</em> it."</p><span class="mono">Ansel Adams</span></div>'; return; }
+      var i=all.length; all.push({id:p[0],t:p[1],pl:p[2],ch:ch.name,n:ch.n});
+      html+='<button type="button" class="fr dvl" data-i="'+i+'" data-cursor="view" style="--a:'+p[3]+'" aria-label="Open photo: '+p[1].replace(/&/g,'&amp;')+'"><span class="num">'+(i+1)+'A ▸</span><span class="im"><img loading="lazy" src="img/'+p[0]+'.jpg" alt="'+p[1].replace(/&/g,'&amp;')+'"></span><span class="cap"><span class="t">'+p[1].replace(/&/g,'&amp;')+'</span><span class="p">'+p[2]+'</span></span></button>';
+    });
+    html+='</div>';
+  });
+  sec.innerHTML=html; wrap.appendChild(sec);
+});
+
+/* reveal + develop */
+var io=new IntersectionObserver(function(es){ es.forEach(function(en){ if(!en.isIntersecting) return; var t=en.target;
+  if(t.classList.contains('fr')){ var k=Array.prototype.indexOf.call(t.parentNode.children,t); setTimeout(function(){ t.classList.add('dev'); },k*160); }
+  else (t.closest('.ch')||t).classList.add('on');
+  io.unobserve(t); }); },{threshold:.3});
+$$('.fr,.ch .hd').forEach(function(el){ io.observe(el); });
+
+/* header */
+$$('.ph .rv').forEach(function(r,i){ r.firstElementChild.style.transitionDelay=(.15+i*.12)+'s'; });
+requestAnimationFrame(function(){ setTimeout(function(){ document.body.classList.add('ready'); $$('.ph .rv').forEach(function(r){ r.classList.add('on'); });
+  $$('.ph [data-c]').forEach(function(el){ var to=+el.getAttribute('data-c'), t0=performance.now()+600; (function s(n){ var p=clamp((n-t0)/1200,0,1); el.textContent=Math.round(to*ease(p)); if(p<1) requestAnimationFrame(s); })(t0); }); }, reduce?0:350); });
+
+/* chapter bar: active + progress */
+var links=$$('#cbar a'), secs=C.map(function(c){ return document.getElementById(c.id); });
+function upd(){ var vh=innerHeight, act=-1;
+  secs.forEach(function(s,i){ var r=s.getBoundingClientRect(); var p=clamp((vh*0.35-r.top)/r.height,0,1); links[i].style.setProperty('--p',p); if(r.top<vh*0.4) act=i; });
+  links.forEach(function(a,i){ a.classList.toggle('act',i===act); });
+  if(act>-1 && innerWidth<=760){ var a=links[act]; var b=bar; if(a.offsetLeft<b.scrollLeft||a.offsetLeft+a.offsetWidth>b.scrollLeft+b.clientWidth) b.scrollTo({left:a.offsetLeft-20,behavior:'smooth'}); }
+}
+var tk=false; addEventListener('scroll',function(){ if(!tk){ tk=true; requestAnimationFrame(function(){ upd(); tk=false; }); } },{passive:true}); upd();
+links.forEach(function(a){ a.addEventListener('click',function(e){ e.preventDefault(); var s=document.getElementById(a.getAttribute('data-ch')); scrollTo({top:s.getBoundingClientRect().top+scrollY-120,behavior:reduce?'auto':'smooth'}); }); });
+/* arriving with #chapter in the address */
+if(location.hash){ var tgt=document.getElementById(location.hash.slice(1)); if(tgt) setTimeout(function(){ scrollTo({top:tgt.getBoundingClientRect().top+scrollY-120}); },400); }
+
+/* lightbox */
+var lb=$('#lb'), li=$('#lbimg'), ci=0;
+function setCap(i){ var p=all[i]; $('#lbt').textContent=p.t; $('#lbc').textContent=p.n+' · '+p.ch+' · '+p.pl; $('#lbn').textContent='Frame '+String(i+1).padStart(2,'0')+' / '+all.length; }
+function show(i){ ci=(i+all.length)%all.length; lb.classList.remove('show'); var p=all[ci];
+  setTimeout(function(){ li.src='img/'+p.id+'.jpg'; li.alt=p.t; setCap(ci); var go=function(){ requestAnimationFrame(function(){ lb.classList.add('show'); }); }; if(li.complete) go(); else li.onload=go; }, lb.classList.contains('vis')?380:0); }
+function open(i){ lb.classList.add('open'); requestAnimationFrame(function(){ lb.classList.add('vis'); }); show(i); $('#lbx').focus({preventScroll:true}); }
+function close(){ lb.classList.remove('show','vis'); setTimeout(function(){ lb.classList.remove('open'); },450); }
+wrap.addEventListener('click',function(e){ var f=e.target.closest('.fr'); if(f){ f.classList.add('dev'); open(+f.getAttribute('data-i')); } });
+$('#lbx').addEventListener('click',close); $('#lbp').addEventListener('click',function(){ show(ci-1); }); $('#lbnx').addEventListener('click',function(){ show(ci+1); });
+lb.querySelector('.frame').addEventListener('click',function(e){ if(e.target===e.currentTarget) close(); });
+lb.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); if(e.key==='ArrowRight') show(ci+1); if(e.key==='ArrowLeft') show(ci-1); });
+/* swipe in the viewer on phones */
+var sx=null; lb.addEventListener('touchstart',function(e){ sx=e.touches[0].clientX; },{passive:true});
+lb.addEventListener('touchend',function(e){ if(sx===null) return; var dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>50) show(ci+(dx<0?1:-1)); sx=null; });
+
+Site.clock(); Site.navScroll(); Site.cursor();
+})();
+</script>
+</body>
+</html>
